@@ -1,0 +1,110 @@
+:root {
+    --dark-bg: #121212;
+    --dark-surface: #1e1e1e;
+    --dark-primary: #BB86FC;
+    --dark-secondary: #03DAC6;
+    --dark-error: #CF6679;
+    --dark-on-bg: #FFFFFF;
+    --dark-on-surface: #FFFFFF;
+    --dark-border: #333333;
+    --dark-hover: #2c2c2c;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--dark-on-bg);
+}
+
+.navbar {
+    background-color: var(--dark-surface) !important;
+}
+
+.card {
+    background-color: var(--dark-surface);
+    border-color: var(--dark-border);
+}
+
+.card-header {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-bottom-color: var(--dark-border);
+}
+
+.table {
+    color: var(--dark-on-bg);
+}
+
+.table thead th {
+    border-bottom-color: var(--dark-border);
+}
+
+.table td, .table th {
+    border-top-color: var(--dark-border);
+}
+
+.table-hover tbody tr:hover {
+    background-color: var(--dark-hover);
+    color: var(--dark-on-bg);
+}
+
+.form-control, .form-select {
+    background-color: var(--dark-surface);
+    border-color: var(--dark-border);
+    color: var(--dark-on-bg);
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: var(--dark-surface);
+    color: var(--dark-on-bg);
+}
+
+.form-label {
+    color: var(--dark-on-bg);
+}
+
+.btn-primary {
+    background-color: var(--dark-primary);
+    border-color: var(--dark-primary);
+    color: black;
+}
+
+.btn-secondary {
+    background-color: var(--dark-secondary);
+    border-color: var(--dark-secondary);
+    color: black;
+}
+
+.btn-danger {
+    background-color: var(--dark-error);
+    border-color: var(--dark-error);
+}
+
+.modal-content {
+    background-color: var(--dark-surface);
+    border-color: var(--dark-border);
+}
+
+.modal-header {
+    border-bottom-color: var(--dark-border);
+}
+
+.modal-footer {
+    border-top-color: var(--dark-border);
+}
+
+.list-group-item {
+    background-color: var(--dark-surface);
+    border-color: var(--dark-border);
+    color: var(--dark-on-bg);
+}
+
+.pagination .page-item .page-link {
+    background-color: var(--dark-surface);
+    border-color: var(--dark-border);
+    color: var(--dark-on-bg);
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--dark-primary);
+    border-color: var(--dark-primary);
+    color: black;
+}
