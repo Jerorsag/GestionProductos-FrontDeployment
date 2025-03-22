@@ -68,3 +68,105 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Sistema de Gestión de Productos - Frontend
+### React Bootstrap Axios JWT
+
+Este repositorio contiene la interfaz de usuario para el Sistema de Gestión de Productos, permitiendo a los usuarios gestionar su catálogo de productos con una experiencia moderna y responsiva.
+
+## Demo en vivo
+- **Frontend URL:** [https://gestionproductos.onrender.com](https://gestionproductos.onrender.com)
+- **Backend API:** [https://gestionproductos.onrender.com](https://gestionproductos.onrender.com)
+
+## Características principales
+- **Interfaz intuitiva:** Diseño moderno y responsivo para una experiencia de usuario óptima.
+- **Gestión de productos:** Interfaz completa para crear, ver, editar y eliminar productos.
+- **Autenticación de usuarios:** Flujos de registro e inicio de sesión integrados.
+- **Seguridad del lado del cliente:** Manejo de tokens JWT y rutas protegidas.
+- **Visualización personalizada:** Los usuarios solo ven sus propios productos.
+
+## Estructura del proyecto
+```
+products-frontend/
+├── node_modules/      # Dependencias
+├── public/            # Archivos públicos
+├── src/               # Código fuente
+│   ├── components/    # Componentes React
+│   ├── services/      # Servicios para comunicación con API
+│   ├── pages/         # Páginas de la aplicación
+│   └── utils/         # Utilidades
+├── .gitignore         # Archivos ignorados por Git
+├── package.json       # Dependencias y scripts
+└── README.md          # Documentación
+```
+
+## Tecnologías utilizadas
+- **React:** Biblioteca JavaScript para construir interfaces de usuario.
+- **Bootstrap:** Framework CSS para diseño responsivo.
+- **Axios:** Cliente HTTP para realizar peticiones a la API.
+- **React Router:** Para la navegación entre páginas.
+- **JWT Decode:** Para decodificar tokens JWT.
+- **LocalStorage API:** Para almacenamiento persistente de tokens.
+
+## Requisitos previos (desarrollo local)
+- Node.js 16 o superior
+- npm 8 o superior
+
+## Configuración del entorno local
+1. Clona el repositorio:
+```bash
+git clone https://github.com/tu-usuario/gestion-productos-frontend.git
+cd gestion-productos-frontend
+```
+
+2. Instala las dependencias:
+```bash
+npm install
+```
+
+3. Configura la URL de la API en `.env` o `.env.local`:
+```
+REACT_APP_API_URL=http://localhost:8080
+```
+
+4. Inicia la aplicación:
+```bash
+npm start
+```
+
+La aplicación estará disponible en http://localhost:3000
+
+## Funcionalidades principales
+
+### Autenticación
+- **Registro:** Formulario para crear una nueva cuenta de usuario.
+- **Inicio de sesión:** Acceso a usuarios existentes.
+- **Cierre de sesión:** Eliminación segura del token de autenticación.
+- **Gestión de estado de autenticación:** Validación y almacenamiento del token JWT.
+
+### Gestión de productos
+- **Lista de productos:** Visualización de todos los productos del usuario actual.
+- **Detalles de producto:** Vista detallada de cada producto.
+- **Creación de productos:** Formulario para añadir nuevos productos.
+- **Edición de productos:** Actualización de productos existentes.
+- **Eliminación de productos:** Borrado de productos con confirmación.
+
+### Seguridad y navegación
+- **Rutas protegidas:** Acceso a páginas restringido para usuarios autenticados.
+- **Interceptores de Axios:** Inclusión automática del token JWT en las peticiones.
+- **Manejo de errores:** Gestión centralizada de respuestas de error de la API.
+- **Redirecciones inteligentes:** Flujos de navegación adaptados al estado de autenticación.
+
+## Flujo de usuario típico
+1. El usuario se registra o inicia sesión.
+2. Navega a la sección de productos y ve su catálogo personal.
+3. Puede crear nuevos productos con el botón de añadir.
+4. Para cada producto, puede ver los detalles, editar o eliminar.
+5. Al finalizar, cierra sesión de forma segura.
+
+## Despliegue
+El frontend está desplegado en [Servicio de alojamiento] y se comunica con la API alojada en Render.
+
+## Contacto
+- Desarrollador: Jeronimo Rodriguez Sepulveda
+- Email: jeronimoroseag@gmail.com
